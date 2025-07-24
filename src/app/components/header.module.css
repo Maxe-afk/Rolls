@@ -1,0 +1,21 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #48A6A7;
+}
+
+.logo{
+    border-radius: 1.5rem;
+}
+
+.headerTitle{
+    font-size: 2rem;
+    font-family: Oswald;
+}
+
+.cart{
+    width: 2rem;
+    height: 2rem;
+}

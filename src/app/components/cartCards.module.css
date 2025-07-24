@@ -1,0 +1,90 @@
+.cartList {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+  font-family: Oswald;
+}
+
+.cartItem {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.cartImage {
+  width: 120px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cartDetails {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.cartDetails h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.cartDetails p {
+  font-size: 0.95rem;
+  margin: 0;
+  color: white;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quantityButton {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.quantityButton:hover {
+  background: #000;
+  color: white;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0;
+  font-family: Oswald;
+}
+
+.removeButton:hover {
+  color: red;
+}
+
+.total{
+    margin-bottom: 5rem;
+}
