@@ -24,33 +24,26 @@ Excalidraw – Schématisation de la base de données
 🧾 Procédure d'installation (local)
 Clonez le dépôt :
 
-bash
-Copier
-Modifier
 git clone 
+
+
 Installez les dépendances :
 
-bash
-Copier
-Modifier
 npm install
+
+
 Lancez la migration de la base de données :
 
-bash
-Copier
-Modifier
 npm run db:migrate
+
+
 Seed de données (produits fictifs) :
 
-bash
-Copier
-Modifier
 npm run db:seed
+
+
 Démarrez le serveur en mode développement :
 
-bash
-Copier
-Modifier
 npm run dev
 L'application sera accessible sur http://localhost:3000.
 
