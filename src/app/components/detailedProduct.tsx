@@ -1,8 +1,9 @@
 "use client";
 
-import { getOneProduct } from "@/service/rollsService";
+import { addArticleToCart, getOneProduct } from "@/service/rollsService";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import styles from "./detailedProduct.module.css"
 
 export default function DetailedProduct() {
     const params = useParams()
@@ -36,11 +37,18 @@ export default function DetailedProduct() {
     if (!product) return <p>Chargement...</p>
 
     return (
-        <div>
-            <h1>{product.name}</h1>
-            <p>{product.long_description}</p>
-            <p>{product.price} €</p>
-            <img src={`/images/${product.image_url}`} alt={product.name} />
-        </div>
+        <>
+            <div className={styles.productContainer}>
+                <div className={styles.productDescription}>
+                    <h1 className={styles.productName}>{product.name}</h1>
+                    <p className={styles.productDescription}>{product.long_description}</p>
+                    <p className={styles.productPrice}>{product.price} €</p>
+                    <button className={styles.addToCart} onClick={() => addArticleToCart(product.id)}>Ajouter au panier</button>
+                </div>
+                <div className={styles.imageContainer}>
+                    <img src={`/images/${product.image_url}`} alt={product.name} className={styles.productImage} />
+                </div>
+            </div>
+        </>
     )
 }

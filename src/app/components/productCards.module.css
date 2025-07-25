@@ -68,13 +68,18 @@
 }
 
 .addToCart {
-  width: 5rem;
+  width: 7rem;
   padding: 0.2rem;
   background-color: #48A6A7;
   border: none;
   border-radius: 1rem;
   cursor: pointer;
   font-family: Oswald;
+}
+
+.addToCart:active{
+  transform: translateY(2px);
+  box-shadow: inset 1px 1px white;
 }
 
 .product-name:hover{
