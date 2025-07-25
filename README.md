@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🛼 HyperSkate
+HyperSkate est une boutique en ligne spécialisée dans la vente de patins à roulettes adaptés à des disciplines sportives inattendues. Notre ambition : révolutionner le monde du sport avec des équipements innovants, absurdes, mais traités avec tout le sérieux d’une entreprise de haute technologie.
 
-## Getting Started
+🧠 Contexte
+HyperSkate est né d’une idée simple : et si le patin à roulettes devenait la norme dans tous les sports ? Nous avons donc conçu une plateforme e-commerce dédiée, traitant chaque produit avec rigueur et professionnalisme. Bien que le ton général du projet reste sérieux, les produits proposés flirtent volontairement avec l’absurde pour créer un décalage humoristique.
 
-First, run the development server:
+🛠️ Technologies utilisées
+React 19 – Composants frontend modernes et réactifs
 
-```bash
+Next.js – Framework fullstack pour le rendu côté serveur et les API routes
+
+Node.js – Serveur back-end pour les opérations et la base de données
+
+TypeScript – Typage statique robuste pour le front et le back
+
+MySQL – Base de données relationnelle
+
+HTML/CSS – Structure et design
+
+GitHub – Hébergement du code et gestion de projet
+
+Excalidraw – Schématisation de la base de données
+
+🧾 Procédure d'installation (local)
+Clonez le dépôt :
+
+bash
+Copier
+Modifier
+git clone 
+Installez les dépendances :
+
+bash
+Copier
+Modifier
+npm install
+Lancez la migration de la base de données :
+
+bash
+Copier
+Modifier
+npm run db:migrate
+Seed de données (produits fictifs) :
+
+bash
+Copier
+Modifier
+npm run db:seed
+Démarrez le serveur en mode développement :
+
+bash
+Copier
+Modifier
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+L'application sera accessible sur http://localhost:3000.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🗃️ Schéma de la base de données
+Voici la structure de notre base de données, représentée via Excalidraw :
+<img width="1158" height="564" alt="image" src="https://github.com/user-attachments/assets/a73fb672-8357-4d72-a4fe-eda217e278d4" />
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+🧪 Fonctionnalités clés
+📦 Ajout de produits au panier
 
-## Learn More
+🖼️ Fiches produit avec descriptions détaillées
 
-To learn more about Next.js, take a look at the following resources:
+🛒 Système de panier connecté à la base de données
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🌐 Architecture fullstack avec SSR (Server-Side Rendering)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧙 Interface sobre et sérieuse pour un contenu farfelu
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📄 Licence
+Projet fictif à but humoristique — libre à vous de le forker ou de le détourner !
